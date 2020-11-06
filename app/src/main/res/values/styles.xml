@@ -1,0 +1,93 @@
+<resources>
+    <!-- APP Theme -->
+    <style name="app_base_theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="app_theme" parent="app_base_theme">
+        <item name="windowNoTitle">true</item>
+        <!--<item name="android:background">@android:color/white</item>-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <!-- LinearLayout Style -->
+    <style name="linearlayout_h_style">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="linearlayout_v_style">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="linearlayout_h_c_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="linearlayout_h_hc_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="linearlayout_h_hc_t_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal|top</item>
+    </style>
+
+    <style name="linearlayout_h_hc_b_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+    </style>
+
+    <style name="linearlayout_h_vc_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="linearlayout_h_vc_l_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="linearlayout_h_vc_r_style">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="linearlayout_v_c_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="linearlayout_v_hc_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="linearlayout_v_hc_t_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|top</item>
+    </style>
+
+    <style name="linearlayout_v_hc_b_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+    </style>
+
+    <style name="linearlayout_v_vc_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="linearlayout_v_vc_l_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="linearlayout_v_vc_r_style">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+</resources>

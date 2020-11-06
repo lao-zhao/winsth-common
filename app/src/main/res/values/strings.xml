@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="app_name">Common Library</string>
+
+    <!-- Network -->
+    <string name="network_disconnect">网络已断开</string>
+    <string name="network_connected">网络已恢复</string>
+    <string name="server_no_response">服务器无响应</string>
+
+    <!-- FTP链接信息 -->
+    <string name="ftp_connect_success">ftp连接成功</string>
+    <string name="ftp_connect_fail">ftp连接失败</string>
+    <string name="ftp_disconnect_success">ftp断开连接</string>
+    <string name="ftp_file_not_exists">ftp上文件不存在</string>
+    <string name="ftp_upload_success">ftp文件上传成功</string>
+    <string name="ftp_upload_fail">ftp文件上传失败</string>
+    <string name="ftp_upload_loading">ftp文件正在上传</string>
+    <string name="ftp_down_loading">ftp文件正在下载</string>
+    <string name="ftp_down_success">ftp文件下载成功</string>
+    <string name="ftp_down_fail">ftp文件下载失败</string>
+    <string name="ftp_delete_file_success">ftp文件删除成功</string>
+    <string name="ftp_delete_file_fail">ftp文件删除失败</string>
+
+    <!-- Message text -->
+    <string name="msg_scan_guide">将取景器对准要扫描的条形码或二维码</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机可能被占用，您可能需要重启设备。</string>
+
+    <!-- 按钮文本 -->
+    <string name="button_search">搜索</string>
+    <string name="button_download">下载</string>
+    <string name="button_ignore">忽略</string>
+    <string name="button_cancel">取消</string>
+    <string name="button_confirm">确认</string>
+    <string name="button_submit">提交</string>
+    <string name="button_delete">删除</string>
+    <string name="button_modify">修改</string>
+    <string name="button_set_child">设置下级</string>
+    <string name="button_scan_delete">扫描删除</string>
+
+
+    <string name="hint_account">帐号</string>
+    <string name="hint_pwd">密码</string>
+
+    <!-- App update -->
+    <string name="update_title">检查新版本</string>
+    <string name="update_msg">已发现新版本，赶快下载体验吧</string>
+    <string name="update_no">没有发现更新的版本</string>
+    <string name="download_title">下载软件</string>
+</resources>

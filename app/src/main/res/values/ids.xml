@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Button IDS -->
+    <item name="btn_back" type="id"></item>
+    <item name="btn_cancel" type="id"></item>
+    <item name="btn_confirm" type="id"></item>
+    <item name="btn_input" type="id"></item>
+    <item name="btn_reset" type="id"></item>
+    <item name="btn_scan" type="id"></item>
+    <item name="btn_submit" type="id"></item>
+    <item name="btn_upload" type="id"></item>
+    <item name="btn_delete" type="id"></item>
+    <item name="btn_view" type="id"></item>
+    <item name="btn_reg" type="id"></item>
+    <item name="btn_login" type="id"></item>
+    <item name="btn_search" type="id"></item>
+    <item name="btn_add" type="id"></item>
+    <item name="btn_edit" type="id"></item>
+    <item name="btn_modify" type="id"></item>
+    <item name="btn_remove" type="id"></item>
+    <item name="btn_using" type="id"></item>
+    <item name="btn_exit" type="id"></item>
+    <item name="btn_set" type="id"></item>
+
+    <!-- LinearLayout -->
+    <item name="ll_header" type="id"></item>
+    <item name="ll_body" type="id"></item>
+    <item name="ll_point" type="id"></item>
+    <item name="ll_input" type="id"></item>
+    <item name="ll_stop_scan" type="id"></item>
+    <item name="ll_delete_code" type="id"></item>
+    <item name="ll_container" type="id"></item>
+    <item name="ll_pos01" type="id"></item>
+    <item name="ll_pos02" type="id"></item>
+    <item name="ll_pos03" type="id"></item>
+    <item name="ll_pos04" type="id"></item>
+    <item name="ll_pos05" type="id"></item>
+
+    <!-- RelativeLayout -->
+    <item name="rl_header" type="id"></item>
+    <item name="rl_body" type="id"></item>
+
+    <!-- TextView IDS -->
+    <item name="tv_all" type="id"></item>
+    <item name="tv_praise" type="id"></item>
+    <item name="tv_favor" type="id"></item>
+    <item name="tv_comment" type="id"></item>
+    <item name="tv_back" type="id"></item>
+    <item name="tv_title" type="id"></item>
+    <item name="tv_content" type="id"></item>
+    <item name="tv_right" type="id"></item>
+    <item name="tv_edit" type="id"></item>
+    <item name="tv_reg" type="id"></item>
+    <item name="tv_item" type="id"></item>
+    <item name="tv_date" type="id"></item>
+    <item name="tv_name" type="id"></item>
+    <item name="tv_cellphone" type="id"></item>
+    <item name="tv_count" type="id"></item>
+    <item name="tv_from_organ" type="id"></item>
+    <item name="tv_from_warehouse" type="id"></item>
+    <item name="tv_to_organ" type="id"></item>
+    <item name="tv_to_warehouse" type="id"></item>
+    <item name="tv_scan_info" type="id"></item>
+    <item name="tv_product_name" type="id"></item>
+    <item name="tv_plan_count" type="id"></item>
+    <item name="tv_scanned_count" type="id"></item>
+    <item name="tv_product_code" type="id"></item>
+    <item name="tv_message" type="id"></item>
+    <item name="tv_delete" type="id"></item>
+    <item name="tv_scan_delete" type="id"></item>
+    <item name="tv_phone" type="id"></item>
+    <item name="tv_address" type="id"></item>
+    <item name="tv_area" type="id"></item>
+    <item name="tv_type" type="id"></item>
+    <item name="tv_tel" type="id"></item>
+    <item name="tv_id" type="id"></item>
+    <item name="tv_info" type="id"></item>
+    <item name="tv_write" type="id"></item>
+    <item name="tv_user" type="id"></item>
+    <item name="tv_send" type="id"></item>
+    <item name="tv_ver" type="id"></item>
+    <item name="tv_protocol" type="id"></item>
+    <item name="tv_result" type="id"></item>
+    <item name="tv_time" type="id"></item>
+    <item name="tv_real_name" type="id"></item>
+    <item name="tv_total_count" type="id"></item>
+    <item name="tv_delivery" type="id"></item>
+    <item name="tv_return" type="id"></item>
+
+    <!-- WebView IDs -->
+    <item name="wv_data" type="id"></item>
+
+    <!-- ListView IDs -->
+    <item name="lv_data" type="id"></item>
+
+    <!-- GridView IDs -->
+    <item name="gv_data" type="id"></item>
+
+    <!-- ExpandableListView IDs -->
+    <item name="elv_data" type="id"></item>
+
+    <!-- RecycleView IDs -->
+    <item name="rv_data" type="id"></item>
+
+    <!-- EditText IDs -->
+    <item name="et_user" type="id"></item>
+    <item name="et_pwd" type="id"></item>
+    <item name="et_search" type="id"></item>
+    <item name="et_from_organ" type="id"></item>
+    <item name="et_from_warehouse" type="id"></item>
+    <item name="et_to_organ" type="id"></item>
+    <item name="et_to_warehouse" type="id"></item>
+    <item name="et_content" type="id"></item>
+    <item name="et_code" type="id"></item>
+    <item name="et_phone" type="id"></item>
+    <item name="et_address" type="id"></item>
+    <item name="et_area" type="id"></item>
+    <item name="et_type" type="id"></item>
+    <item name="et_tel" type="id"></item>
+    <item name="et_id" type="id"></item>
+    <item name="et_name" type="id"></item>
+    <item name="et_new_pwd" type="id"></item>
+    <item name="et_confirm_pwd" type="id"></item>
+    <item name="et_title" type="id"></item>
+
+    <!-- ImageView IDs -->
+    <item name="iv_toggle" type="id"></item>
+    <item name="iv_product" type="id"></item>
+    <item name="iv_item" type="id"></item>
+    <item name="iv_head" type="id"></item>
+    <item name="iv_close" type="id"></item>
+    <item name="iv_status" type="id"></item>
+    <item name="iv_pos0" type="id"></item>
+    <item name="iv_pos1" type="id"></item>
+    <item name="iv_pos2" type="id"></item>
+    <item name="iv_message" type="id"></item>
+    <item name="iv_user" type="id"></item>
+    <item name="iv_friend" type="id"></item>
+    <item name="iv_share" type="id"></item>
+    <item name="iv_pic" type="id"></item>
+    <item name="iv_emoticon" type="id"></item>
+    <item name="iv_publish" type="id"></item>
+
+    <!-- CheckBox IDs -->
+    <item name="ck_select_all" type="id"></item>
+    <item name="ck_item" type="id"></item>
+
+    <!-- com.google.zxing -->
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="selected_view" type="id"/>
+</resources>
