@@ -91,6 +91,14 @@ public class DateTimeUtil {
     }
 
     /**
+     * 获取当前日期时间，格式：yyyy-MM-dd HH:mm:ss
+     * @return
+     */
+    public static String getCurrentDateTime() {
+        return formatDateTime("yyyy-MM-dd HH:mm:ss", new Date());
+    }
+
+    /**
      * 获取当前季度的第一天
      *
      * @return 返回当前季度第一天
@@ -744,5 +752,16 @@ public class DateTimeUtil {
             return ago / ONE_DAY + "天前";
         else
             return dateTime;
+    }
+
+    /**
+     * 将时间戳转换为指定格式（yyyy-MM-dd HH:mm:ss）的时间
+     * @param timeStamp 时间戳
+     * @return 返回指定格式的时间
+     */
+    public static String getDateTimeFromTimeStamp(Long timeStamp) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String dateTime = sdf.format(new Date(Long.parseLong(String.valueOf(timeStamp))));      // 时间戳转换成时间
+        return dateTime;
     }
 }
