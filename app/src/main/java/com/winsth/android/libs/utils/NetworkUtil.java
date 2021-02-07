@@ -116,17 +116,10 @@ public class NetworkUtil {
      * @return 可用：true;不可用：false
      */
     public static boolean isNetworkConnected(Context context) {
-        ConnectivityManager mConnectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkStatus networkStatus = isAvailable(context);
 
-        if (mConnectivityManager != null) {
-            State mMobile = mConnectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState();
-            State mWifi = mConnectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState();
-            if (mMobile == State.CONNECTING || mWifi == State.CONNECTING) {
-                return false;
-            }
-            if (mMobile == State.CONNECTED || mWifi == State.CONNECTED) {
-                return true;
-            }
+        if (networkStatus == NetworkStatus.CONNECTED) {
+            return true;
         }
 
         return false;

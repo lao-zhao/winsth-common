@@ -74,7 +74,7 @@ public class ExceptionUtil implements Thread.UncaughtExceptionHandler {
             @Override
             public void run() {
                 Looper.prepare();
-                DialogUtil.showToast(mContext, "Sorry,app generates unknown error,please retry few minutes later");
+                DialogUtil.showToast(mContext, "App has an unknown error, please contact the supplier.");
                 Looper.loop();
             }
         }.start();

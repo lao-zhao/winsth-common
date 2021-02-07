@@ -45,13 +45,14 @@ public class OKHttpUtil {
 
     private OkHttpClient mOkHttpClient;
     private static OKHttpUtil mInstance;
+    private TrustAllCerts mTrustAllCerts;
     private int SUCCESS = 1;
 
     private OKHttpUtil() {
         if (mOkHttpClient == null) {
             Builder builder = new OkHttpClient().newBuilder();
 //            builder.connectionSpecs(createConnectionSpec());
-            builder.sslSocketFactory(createSSLSocketFactory());
+            builder.sslSocketFactory(createSSLSocketFactory(), mTrustAllCerts);
             builder.hostnameVerifier(new TrustAllHostnameVerifier());
             builder.connectTimeout(CON_TIMEOUT0, TimeUnit.SECONDS);
             builder.readTimeout(CON_TIMEOUT, TimeUnit.SECONDS);
@@ -72,11 +73,12 @@ public class OKHttpUtil {
 
         try {
             SSLContext sc = SSLContext.getInstance("TLS");
-            sc.init(null, new TrustManager[]{new TrustAllCerts()}, new SecureRandom());
+            mTrustAllCerts = new TrustAllCerts();
+            sc.init(null, new TrustManager[]{mTrustAllCerts}, new SecureRandom());
 
-//            ssfFactory = sc.getSocketFactory();
             ssfFactory = new MySSLSocketFactory(sc.getSocketFactory());
         } catch (Exception e) {
+
         }
         return ssfFactory;
     }
@@ -418,11 +420,8 @@ public class OKHttpUtil {
             }
             if (formFileList != null && formFileList.size() > 0) {
                 for (FormFile formFile : formFileList) {
-                    fileBuilder.addFormDataPart(
-                            formFile.getName(),
-                            formFile.getFile().getName(),
-                            RequestBody.create(MediaType.parse(formFile.getMediaType()), formFile.getFile())
-                    );
+                    fileBuilder.addFormDataPart(formFile.getName(), formFile.getFile().getName(), RequestBody.create(MediaType.parse(formFile.getMediaType
+                            ()), formFile.getFile()));
                 }
             }
             RequestBody body = fileBuilder.build();
@@ -571,7 +570,6 @@ public class OKHttpUtil {
     public static class FormFile {
         public static final String IMG_PNG = "image/png";
         public static final String IMG_JPG = "image/jpg";
-        public static final String IMG_JPEG = "image/jpeg";
         public static final String MEDIA_AUDIO = "application/octet-stream";
         public static final String TEXT_JSON = "application/json; charset=utf-8";
         public static final String TEXT_TXT = "text/xml; charset=utf-8";

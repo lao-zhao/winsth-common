@@ -47,6 +47,6 @@ public class ConfigUtil {
         /**
          * 日志文件夹
          */
-        public static final String FOLDER_LOG = "winsafe";
+        public static final String FOLDER_LOG = "winsth";
     }
 }

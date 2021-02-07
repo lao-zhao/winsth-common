@@ -11,7 +11,7 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 
 /**
- * Created by haosheng.zhang on 2018/9/11.
+ * Created by aaron.zhao on 2018/9/11.
  */
 
 public class MySSLSocketFactory extends SSLSocketFactory {

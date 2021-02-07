@@ -49,7 +49,7 @@ dependencies {
     implementation files('libs/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar')
 
     /* fastjson依赖【ali】 */
-    api 'com.alibaba:fastjson:1.2.68'
+    api 'com.alibaba:fastjson:1.2.75'
 
     /* rxjava2依赖 */
     /*api('io.reactivex.rxjava2:rxjava:2.2.19')*/
